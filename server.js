@@ -1,10 +1,12 @@
+'use strict';
+
 const express = require('express');
 const fs = require('fs');
 const hbs = require('hbs');
 
-const app = express();
+const port = process.env.PORT || 3000;
 
-const port = 3000;
+const app = express();
 
 const padNum = (num, width) => {
   let s = num + "";
@@ -36,11 +38,11 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use((req, res, next) => {
-    res.render('maintenance.hbs', {
-      pageTitle: 'Maintenance Underway'
-    });
-});
+// app.use((req, res, next) => {
+//     res.render('maintenance.hbs', {
+//       pageTitle: 'Maintenance Underway'
+//     });
+// });
 
 app.use(express.static(__dirname + '/public'));
 

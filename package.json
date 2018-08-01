@@ -1,15 +1,24 @@
 {
   "name": "web-server",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
     "hbs": "^4.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rscarberry-wa/node-course-2-web-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rscarberry-wa/node-course-2-web-server/issues"
+  },
+  "homepage": "https://github.com/rscarberry-wa/node-course-2-web-server#readme",
+  "description": ""
 }
